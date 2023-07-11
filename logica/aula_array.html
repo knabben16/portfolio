@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="aulaArrays()">Clique aqui</button>
+    <script>
+        function aulaArrays(){
+            var alunos = []         //criando uma array
+            alunos.push("Jackson")  //adicionando Jackson
+            alunos.push("Ana")      //adicionando Ana
+            alunos.push("Danilo")   // adicionando Danilo
+            alunos.push("Laur")     // adicionando Laur
+            alert(alunos)
+            alunos[3] = "Laura"      // alterando para "Laur"
+            alert(alunos)
+            var posicao = alunos.indexOF("Laura") //retorna
+            alunos.splice(posicao, 1) //excluindo "Laura"
+            alert(alunos)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="moradoresArrays()">Não Clique aqui</button>
+    <script>
+        function moradoresArrays(){
+            var Knabben = []
+            Knabben.push("Viníciu")
+            Knabben.push("Gilberto")
+            Knabben.push("Fabiana")
+            Knabben.push("Rebeca")
+            alert(Knabben)
+            Knabben[0] = "Vinícius"
+            alert(Knabben)
+            var posicao = Knabben.indexOF("Vinícius")
+            Knabben.splice(0, 1)
+            alert(Knabben)
+        }
+    </script>
+</body>
+</html>

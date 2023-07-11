@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<!--🤔 Apesar da sintaxe parecida, o Doctype não é uma tag do HTML. O Doctype HTML é uma declaração para informar ao navegador qual é a versão do HTML utilizada no arquivo. Essa declaração vem antes das tags HTML, portanto, geralmente é apresentada na primeira linha de um código.-->
+<html lang="en"> 
+
+<head> 
+<!--🤣 O head de um documento HTML é a parte que não é exibida no navegador da Web quando a página é carregada.-->
+    <meta charset="UTF-8"> 
+    <!--😀 é uma tag HTML que define o conjunto de caracteres a ser utilizado na exibição do conteúdo de um site.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!--😎 ela pode configurar a página para ser renderizada como em outra versão do Internet Explorer.--> 
+    <!--🤩 content="IE=edge" Essa tag meta é específica do navegador Internet Explorer, ela configura a página para ser renderizada como em outra versão do Internet Explorer.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--😬 A meta tag de viewport controla como um site é exibido em um dispositivo móvel.--> 
+    <!--😴 device-width Descreve a largura do dispositivo e saída (ou seja, toda a tela ou página, em vez de apenas a área de renderização, tal como a janela do documento).--> 
+    <!--😍 initial-scale=1 define o nível de zoom inicial quando o usuário visita a página.-->
+    <title>meusite</title> 
+    <!--🤨 O elemento HTML <title> (Elemento HTML Título) define o título do documento, mostrado na barra de título de um navegador ou na aba da página. Pode conter somente texto e quaisquer marcações contidas no texto não são interpretadas.-->
+</head> 
+<!--🤣 O head de um documento HTML é a parte que não é exibida no navegador da Web quando a página é carregada.-->
+
+
+<body> 
+<!--🤑 body é um elemento que contém tudo o que é exibido como parte de uma página de um site.-->
+    <h1>Descubra a média!</h1> 
+    <!--😐 H1 é a abreviação do inglês para Header 1, ou Cabeçalho 1, logo, o mais importante dos Headers. Conceitualmente, o H1 possui um destaque maior, uma fonte maior, e é geralmente o elemento de texto mais visível da página.-->
+    <button onclick="media()">Clique aqui!</button> 
+    <!--🙄 O evento onclick executa determinada funcionalidade quando um botão é clicado. Isso pode ocorrer quando um usuário envia um formulário, quando você altera determinado conteúdo na página da web e assim por diante.-->
+    <h1> Maior ou menor de idade?</h1> 
+    <!--😋 H1 é a abreviação do inglês para Header 1, ou Cabeçalho 1, logo, o mais importante dos Headers. Conceitualmente, o H1 possui um destaque maior, uma fonte maior, e é geralmente o elemento de texto mais visível da página.-->
+    <button onclick="idade()">Clique aqui!</button>
+    <!--😏 O evento onclick executa determinada funcionalidade quando um botão é clicado. Isso pode ocorrer quando um usuário envia um formulário, quando você altera determinado conteúdo na página da web e assim por diante.-->
+    <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"> oi </a>
+    <!--😪 O atributo href é usado no HTML para fazer referência a uma URL externa, seja um link ou um arquivo. Através desse atributo podemos definir o destino de uma tag <a> ou até mesmo o endereço de um arquivo de estilos CSS.-->
+    <!--😜 O elemento <a> em HTML (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL. O conteúdo dentro de cada <a> precisará indicar o destino do link.-->
+    <p> com a tag <img> podemos criar imagens! como abaixo</p> 
+    <!--😒 O elemento HTML <p> representa um parágrafo.-->
+    <img src="https://upload.wikimedia.org/wikipedia/pt/7/77/EricCartman.png">
+    <!--😶 Como mencionamos, o elemento <img> é utilizado para inserir imagens em uma página HTML. A imagem adicionada pode ser de diferentes tamanhos, origens e formatos, de que falaremos mais adiante. Seu principal atributo é o src, que significa source e corresponde à informação sobre o endereço da imagem -->
+    <p> EricCartman </p> 
+    <!--😒 O elemento HTML <p> representa um parágrafo.-->
+    <input type="number" id="temperatura" placeholder="Digite a temparutura"><br>
+    <!--😔 O elemento HTML quebra-de-linha <br>-->
+    <!--🤐 O placeholder é um atributo do HTML que cumpre a função de fornecer ao usuário uma dica que descreve o valor esperado em um dado campo de entrada. Esta dica deverá ser apresentada ao usuário antes que ele entre com o valor e deverá ainda, ser curta e objetiva.-->
+    <!--🤗 O atributo Id especifica uma identificação única para o elemento HTML. Por questões de boas práticas, não deve ser reutilizado e nem conter espaços em seu nome, pois o navegador irá identificar o espaço como parte dele, já que os elementos não podem ter mais de um Id.-->
+    <!--😲 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um <input> varia consideravelmente dependendo do valor de seu atributo type  -->
+    <input id="cf" type="radio" name="tipo">Celsius para Farenheit</input><br>
+    <!--😔 O elemento HTML quebra-de-linha <br>-->
+    <!--🤯 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+    <input id="ck" type="radio" name="tipo">Celsius para Kelvin</input><br>
+    <!--😔 O elemento HTML quebra-de-linha <br>-->
+    <!--🤯 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+    <input id="fc" type="radio" name="tipo">Farenheit para Celsius</input><br>
+    <!--😔 O elemento HTML quebra-de-linha <br>-->
+    <!--🤯 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+    <input id="fk" type="radio" name="tipo">Farenheit para Kelvin</input><br>
+    <!--😔 O elemento HTML quebra-de-linha <br>-->
+    <!--🤯 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+    <input id="kc" type="radio" name="tipo">Kelvin para Celsius</input><br>
+    <!--😔 O elemento HTML quebra-de-linha <br>-->
+    <!--🤯 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+    <input id="kf" type="radio" name="tipo">Kelvin para Farenheit</input><br>
+    <!--😔 O elemento HTML quebra-de-linha <br>-->
+    <!--🤯 O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+    <button onclick="converte()">Converter</button>
+    <!--😏 O evento onclick executa determinada funcionalidade quando um botão é clicado. Isso pode ocorrer quando um usuário envia um formulário, quando você altera determinado conteúdo na página da web e assim por diante.-->
+    <p id="resultado">resultado</p>
+    <!--😒 O elemento HTML <p> representa um parágrafo.-->
+</body>
+<!--🤑 body é um elemento que contém tudo o que é exibido como parte de uma página de um site.-->
+
+
+
+
+
+
+</html>
+<!--😫 As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página -->
+<script>
+//😤 <script> é usado para incluir ou referenciar um script executável. Conteúdo de metadados, Fluxo de conteúdo, Conteúdo fraseado. -->
+    function media() {
+    //😭 Toda função que é criada por obrigação tem que ter um retorno. Utilizamos funções geralmente quando precisamos calcular algo, retornar algum valor verdadeiro, ou retornar algum teste. 
+        var q = prompt("Digite a quantidade de numeros para média!")
+        //😢 <var> representa uma variável em uma expressão matemática ou um contexto de programação.
+        //🥶 prompt() exibe uma caixa de diálogo com uma mensagem opcional solicitando ao usuário a entrada de algum texto.
+        var resultado, soma = 0
+        for (var i = 1; i <= q; i++) {
+        //😢 <var> representa uma variável em uma expressão matemática ou um contexto de programação.
+        //🥵 for Trata-se de uma linguagem de marcação para desenvolver páginas e documentos eletrônicos para a internet, fornecendo informações para usuários, navegadores e mecanismos de busca.
+            soma += Number(prompt("Digite o " + i + "° numero!"))
+            //🥶 prompt() exibe uma caixa de diálogo com uma mensagem opcional solicitando ao usuário a entrada de algum texto.
+            //😳 Number: É utilizado para campos que devem apenas conter números, podendo ter seus limites (maior e menor valor aceitos) definidos.
+        }
+        resultado = soma / q
+        alert("A média é: " + resultado)
+        //🤪 O alert é uma das mais simples caixas de diálogo, com uma aparência simples e intuitiva elas são muito usadas em validações de formulários e/ou bloqueio de ações do browser. Sua principal função é mostrar ao usuário uma mensagem e um botão de confirmação de que o usuário tenha visto a mensagem.
+    }
+    function idade() {
+    //😭 Toda função que é criada por obrigação tem que ter um retorno. Utilizamos funções geralmente quando precisamos calcular algo, retornar algum valor verdadeiro, ou retornar algum teste. 
+        var seuNome = prompt("Escreva seu nome!")
+        //🥶 prompt() exibe uma caixa de diálogo com uma mensagem opcional solicitando ao usuário a entrada de algum texto.
+        //😢 <var> representa uma variável em uma expressão matemática ou um contexto de programação.
+        var anoNasc = prompt("Digite o ano de seu nascimento")
+        //🥶 prompt() exibe uma caixa de diálogo com uma mensagem opcional solicitando ao usuário a entrada de algum texto.
+        //😢 <var> representa uma variável em uma expressão matemática ou um contexto de programação.
+        var idade, anoAtual = 2023
+        //😢 <var> representa uma variável em uma expressão matemática ou um contexto de programação.
+        idade = anoAtual - anoNasc
+        if (idade >= 18) {
+        //😱 A condicional if é uma estrutura condicional que executa a afirmação, dentro do bloco, se determinada condição for verdadeira. Se for falsa, executa as afirmações dentro de else.
+            alert("Bem vindo " + seuNome + ", neste ano você completa " + idade + " anos, portanto é maior de idade.")
+            //🤪 O alert é uma das mais simples caixas de diálogo, com uma aparência simples e intuitiva elas são muito usadas em validações de formulários e/ou bloqueio de ações do browser. Sua principal função é mostrar ao usuário uma mensagem e um botão de confirmação de que o usuário tenha visto a mensagem.
+        }
+        else {
+        //😵 A condição else serve como um caminho alternativo do if. Ou seja, o else vai ser executado se a condição sendo verificada no if for falsa. Por exemplo, no código abaixo, se a condição do if for verdadeira, ele executa apenas a afirmação1, entretanto, se a condição for falsa, ele executa apenas a afirmação2.
+            alert("Bem vindo " + seuNome + ", neste ano você completa " + idade + " anos, portanto é menor de idade.")
+            //🤪 O alert é uma das mais simples caixas de diálogo, com uma aparência simples e intuitiva elas são muito usadas em validações de formulários e/ou bloqueio de ações do browser. Sua principal função é mostrar ao usuário uma mensagem e um botão de confirmação de que o usuário tenha visto a mensagem.
+        }
+    }
+    function converte() {
+    //👾 A declaração de uma função é quando construimos a caixa mágica. foo é o nome da função e o código entre as chaves {}, é o corpo da nossa função. A palavra function é a forma da linguagem JavaScript indicar que estamos declarando uma função (criando a caixa mágica).
+        var temperatura = Number(document.getElementById('temperatura').value)
+        //😢 <var> representa uma variável em uma expressão matemática ou um contexto de programação.
+        //😠 Number: É utilizado para campos que devem apenas conter números, podendo ter seus limites (maior e menor valor aceitos) definidos. Range: É utilizado para campos de entrada que devem receber um valor a partir de uma variação de números.
+        //🥴 O comando getElementByid nos retorna um elemento do html
+        var resultado = 0
+        //😢 <var> representa uma variável em uma expressão matemática ou um contexto de programação.
+        if (document.getElementById("cf").checked) {
+        //😱 A condicional if é uma estrutura condicional que executa a afirmação, dentro do bloco, se determinada condição for verdadeira. Se for falsa, executa as afirmações dentro de else.
+        //🤢 O método getElementById() permite obter um elemento do documento a partir de seu atributo ID especificado. É um método importante e muito empregado para obter informações ou manipular um elemento em um documento HTML. É suportado atualmente por todos os navegadores mais comuns.
+            resultado = temperatura * (9 / 5) + 32
+        }
+        else if (document.getElementById("ck").checked) {
+        //🤢 O método getElementById() permite obter um elemento do documento a partir de seu atributo ID especificado. É um método importante e muito empregado para obter informações ou manipular um elemento em um documento HTML. É suportado atualmente por todos os navegadores mais comuns.
+        //🤡 O comando if - else. Permite executar alguns comandos se uma condição for verdadeira e outros se ela for falsa. De acordo com a lógica a ser implementada, pode haver necessidade de utilizar não apenas um, mas um conjunto de ifs subordinados uns aos outros. Dizemos que neste caso os comandos devem estar aninhados.
+            resultado = temperatura + 273.15
+        }
+        else if (document.getElementById("fc").checked) {
+        //🤢 O método getElementById() permite obter um elemento do documento a partir de seu atributo ID especificado. É um método importante e muito empregado para obter informações ou manipular um elemento em um documento HTML. É suportado atualmente por todos os navegadores mais comuns.
+        //🤡 O comando if - else. Permite executar alguns comandos se uma condição for verdadeira e outros se ela for falsa. De acordo com a lógica a ser implementada, pode haver necessidade de utilizar não apenas um, mas um conjunto de ifs subordinados uns aos outros. Dizemos que neste caso os comandos devem estar aninhados.
+            resultado = (temperatura - 32) * (5 / 9)
+        }
+        else if (document.getElementById("fk").checked) {
+        //🤢 O método getElementById() permite obter um elemento do documento a partir de seu atributo ID especificado. É um método importante e muito empregado para obter informações ou manipular um elemento em um documento HTML. É suportado atualmente por todos os navegadores mais comuns.
+        //🤡 O comando if - else. Permite executar alguns comandos se uma condição for verdadeira e outros se ela for falsa. De acordo com a lógica a ser implementada, pode haver necessidade de utilizar não apenas um, mas um conjunto de ifs subordinados uns aos outros. Dizemos que neste caso os comandos devem estar aninhados.
+            resultado = (temperatura - 32) * (5 / 9) + 273.15
+        }
+
+
+        else if (document.getElementById("kc").checked) {
+        //🤢 O método getElementById() permite obter um elemento do documento a partir de seu atributo ID especificado. É um método importante e muito empregado para obter informações ou manipular um elemento em um documento HTML. É suportado atualmente por todos os navegadores mais comuns.
+        //🤡 O comando if - else. Permite executar alguns comandos se uma condição for verdadeira e outros se ela for falsa. De acordo com a lógica a ser implementada, pode haver necessidade de utilizar não apenas um, mas um conjunto de ifs subordinados uns aos outros. Dizemos que neste caso os comandos devem estar aninhados.
+            resultado = temperatura - 275.15
+        }
+        else if (document.getElementById("kf").checked) {
+        //🤢 O método getElementById() permite obter um elemento do documento a partir de seu atributo ID especificado. É um método importante e muito empregado para obter informações ou manipular um elemento em um documento HTML. É suportado atualmente por todos os navegadores mais comuns.
+        //🤡 O comando if - else. Permite executar alguns comandos se uma condição for verdadeira e outros se ela for falsa. De acordo com a lógica a ser implementada, pode haver necessidade de utilizar não apenas um, mas um conjunto de ifs subordinados uns aos outros. Dizemos que neste caso os comandos devem estar aninhados.
+            resultado = (temperatura - 273.15) * (9 / 5) + 32
+        }
+        document.getElementById("resultado").innerHTML = resultado
+        //🤢 O método getElementById() permite obter um elemento do documento a partir de seu atributo ID especificado. É um método importante e muito empregado para obter informações ou manipular um elemento em um documento HTML. É suportado atualmente por todos os navegadores mais comuns.
+    }
+</script>
+<!--🤠 <script> O elemento HTML <script> é usado para incluir ou referenciar um script executável. Conteúdo de metadados, Fluxo de conteúdo, Conteúdo fraseado. -->
